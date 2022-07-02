@@ -16,7 +16,7 @@ public class FirstNonRepElem {
     char firstNotRepeatingCharacter(String s){
         HashMap<Character, Integer> char_counts = new HashMap<>();
         for(int i = 0; i < s.length(); i++){
-            char c = s.charAtAt(i);
+            char c = s.charAt(i);
         if(char_counts.containsKey(c)) {
             char_counts.put(c, char_counts.get(c) + 1);
         }else{
